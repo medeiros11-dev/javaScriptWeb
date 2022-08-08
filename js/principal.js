@@ -17,11 +17,11 @@ for(var i=0; i<pacientes.length; i++){
     var alturaEhValida = true;
     var pesoEhValido = true;
 
-    if (peso <= 0 || peso > 500) {
+    if (peso <= 0 || peso > 300) {
         console.log("Peso inválido!");
         tdPeso.textContent = "Peso inválido!";
         pesoEhValido = false;
-        paciente.style.color = "red";
+        paciente.classList.add("paciente-invalido");
 
     }
 
@@ -29,6 +29,7 @@ for(var i=0; i<pacientes.length; i++){
         console.log("Altura inválida!");
         tdAltura.textContent = "Altura inválida!";
         alturaEhValida = false;
+        paciente.style.backgroundColor = "lightcoral";
     }
 
     if (alturaEhValida && pesoEhValido) {
@@ -39,4 +40,3 @@ for(var i=0; i<pacientes.length; i++){
         tdImc.textContent = "Altura e/ou peso inválidos!"
     }
 }
-
