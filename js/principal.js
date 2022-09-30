@@ -40,3 +40,7 @@ for(var i=0; i<pacientes.length; i++){
         tdImc.textContent = "Altura e/ou peso inválidos!"
     }
 }
+
+titulo.addEventListener("click", function(){
+    console.log("Função anônima");
+})
