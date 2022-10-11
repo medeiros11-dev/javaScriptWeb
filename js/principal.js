@@ -41,6 +41,11 @@ for(var i=0; i<pacientes.length; i++){
     }
 }
 
-titulo.addEventListener("click", function(){
-    console.log("Função anônima");
+var botaoAdicionar = document.querySelector("#adicionar-paciente");
+
+botaoAdicionar.addEventListener("click", function(event){
+    event.preventDefault();
+
+    console.log("Cliquei no botao")
+
 })
